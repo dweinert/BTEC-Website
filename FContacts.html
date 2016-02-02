@@ -138,6 +138,60 @@ div.PPP {
     box-shadow: 0 0 20px rgba(0,0,0,0.3); 	
 } 
 
+
+
+
+
+<!--fkdjsahfjkdhsjahfjkdshafjhdklsjah-->
+#form-wrap{
+	background-color:white
+    color:black;
+	margin: 50px auto;
+	padding: 20px 0;
+	float: left;
+	width: 600px;
+	height: 250px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3); 
+}
+form{
+	width: 500px;
+	margin: 0 auto;
+}
+label{
+	display: block;
+	margin: 5 0 0 20px;
+	font: 20px sans-serrif;
+	color: #0000A0;
+	text-align: justify;
+}
+input{
+	width: 350px;
+	height: 40px;
+	margin: 0 0 0 20px;
+	}
+textarea{
+	width: 350px;
+	height: 150px;
+	margin: 0 0  0 20px;
+}
+fieldset{
+	box-shadow:  0 0 20px rgba(0,0,0,0.3)
+	background-color: white;
+	padding: 0 0 20px 0;
+}
+.labelOne{
+	margin-top: 10px;
+}
+.btn{
+	width: 125px;
+}
+
+
+
+
+
+
+
 </style>
 
 
@@ -211,7 +265,22 @@ B-TEC phone num
 </div>
 
 
-
+<div id="from-wrap">
+	<form action = "contact.php" method="post">
+		<fieldset>
+			<h4>Contact Us</h4>
+					<label class="labelOne" for="name"> Name: </label>
+					<input name = "name"/>
+					<label for = "email">Email: </label>
+					<input name = "email"/>
+					<label for = "comments">Comments: </label>
+					<textarea name = "comments"></textarea>
+		</fieldset>
+		<fieldset>
+			<input class ="btn" type= "submit" value = "Send Email"/>
+			<input class = "btn" type = "reset" value = "Reset Form"/>
+		</fieldset>
+	</form>
 
 
 
